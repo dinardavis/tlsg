@@ -200,49 +200,60 @@ export default function About() {
       </section>
 
       {/* Beliefs */}
-      <section className="about-section about-beliefs">
-        <div className="about-beliefs-grid">
-          <AboutCard
-            number="1"
-            title="Energy beats willpower"
-            className="about-belief-card"
-          >
-            <p>Build survival routines you'll actually do.</p>
-          </AboutCard>
+     <section className="about-section about-beliefs">
+      <AboutSectionHeader
+        eyebrow="The code"
+        title="TLSG rules to live by"
+        lead="Practical moves, not abstract advice. I share what I test so you skip the potholes."
+      />
+      <div className="about-beliefs-grid">
+        <AboutCard
+          number="1"
+          title="Energy beats willpower"
+          className="about-belief-card"
+        >
+          <p>Build survival routines you'll actually do.</p>
+          <p>Systems that run on autopilot will outlast bursts of motivation. Stack habits on cues you already follow, and momentum becomes your fuel.</p>
+        </AboutCard>
 
-          <AboutCard
-            number="2"
-            title="Small tests > big bets"
-            className="about-belief-card"
-          >
-            <p>Fail cheap, learn fast, move forward.</p>
-          </AboutCard>
+        <AboutCard
+          number="2"
+          title="Small tests > big bets"
+          className="about-belief-card"
+        >
+          <p>Fail cheap, learn fast, move forward.</p>
+          <p>Big leaps drain cash and confidence when they flop. Quick tests let you find what works while the stakes stay low.</p>
+        </AboutCard>
 
-          <AboutCard
-            number="3"
-            title="Money is oxygen"
-            className="about-belief-card"
-          >
-            <p>Track your burn, extend your runway.</p>
-          </AboutCard>
+        <AboutCard
+          number="3"
+          title="Money is oxygen"
+          className="about-belief-card"
+        >
+          <p>Track your burn, extend your runway.</p>
+          <p>Cashflow buys you time to adapt. Watch the numbers like your life depends on it—because your survival plan does.</p>
+        </AboutCard>
 
-          <AboutCard
-            number="4"
-            title="Home is a skill"
-            className="about-belief-card"
-          >
-            <p>Anchor fast with repeatable rituals.</p>
-          </AboutCard>
+        <AboutCard
+          number="4"
+          title="Home is a skill"
+          className="about-belief-card"
+        >
+          <p>Anchor fast with repeatable rituals.</p>
+          <p>Whether you’re in Bangkok or your hometown, routines make foreign ground feel steady. Home isn’t found, it’s built piece by piece.</p>
+        </AboutCard>
 
-          <AboutCard
-            number="5"
-            title="Tell the truth"
-            className="about-belief-card"
-          >
-            <p>Real numbers, real steps, no spin.</p>
-          </AboutCard>
-        </div>
-      </section>
+        <AboutCard
+          number="5"
+          title="Tell the truth"
+          className="about-belief-card"
+        >
+          <p>Real numbers, real steps, no spin.</p>
+          <p>Survival gets easier when you cut the story and face the facts. Honesty with yourself is the ultimate leverage.</p>
+        </AboutCard>
+      </div>
+    </section>
+
 
       {/* Personal Snapshot */}
       <section className="about-section about-personal about-tint-blue">
