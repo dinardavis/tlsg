@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Homepage Form Update</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .test-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .test-link {
+        display: inline-block;
+        background: #891a1b;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+      .test-link:hover {
+        background: #6b1415;
+      }
+      .status {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+      }
+      .success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+      .info {
+        background: #d1ecf1;
+        color: #0c5460;
+        border: 1px solid #bee5eb;
+      }
+      .warning {
+        background: #fff3cd;
+        color: #856404;
+        border: 1px solid #ffeaa7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test-container">
+      <h1>Homepage Newsletter Form Update</h1>
+
+      <div class="status success">
+        <strong>✓ Name field added to homepage newsletter form!</strong>
+      </div>
+
+      <div class="status info">
+        <strong>Changes made:</strong>
+        <ul>
+          <li>Added name field input to NewsletterSignup component</li>
+          <li>Updated form state management to handle both name and email</li>
+          <li>Added form validation for both fields</li>
+          <li>Maintained consistent styling with survival guide form</li>
+          <li>Added error handling for both name and email fields</li>
+        </ul>
+      </div>
+
+      <h2>How to test:</h2>
+      <ol>
+        <li>Start the development server: <code>npm start</code></li>
+        <li>Navigate to: <code>http://localhost:3000/#/</code></li>
+        <li>Scroll to the newsletter signup section in the hero area</li>
+        <li>Test the form with various inputs</li>
+      </ol>
+
+      <a href="http://localhost:3000/#/" class="test-link" target="_blank">
+        Open Homepage
+      </a>
+
+      <h2>Expected behavior:</h2>
+      <ul>
+        <li>
+          <strong>Form fields:</strong> Both name and email fields should be
+          visible
+        </li>
+        <li>
+          <strong>Validation:</strong> Both fields should be required with error
+          messages
+        </li>
+        <li>
+          <strong>Email validation:</strong> Should check for valid email format
+        </li>
+        <li>
+          <strong>Success state:</strong> Should show success message after
+          valid submission
+        </li>
+        <li>
+          <strong>Error clearing:</strong> Errors should clear when user starts
+          typing
+        </li>
+        <li>
+          <strong>Styling:</strong> Should match the survival guide form styling
+        </li>
+      </ul>
+
+      <div class="status warning">
+        <strong>Note:</strong> The form now collects both name and email, just
+        like the survival guide page. Make sure the development server is
+        running before testing.
+      </div>
+    </div>
+  </body>
+</html>

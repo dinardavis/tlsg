@@ -45,8 +45,8 @@ function HomePage({ onPostClick, onNavigate }) {
         <div className="hero-container">
           <div className="hero-left">
             <h1 className="hero-title">
-              The Guide to Rebooting Your Life <br></br>
-              <span>(without wrecking it)</span>
+              The "How-To" Reboot Your Life Guide<br></br>
+              {/* <span>(without wrecking it)</span> */}
             </h1>
                       <div className="hero-media hero-media-img">
               <img

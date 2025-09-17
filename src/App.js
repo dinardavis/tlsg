@@ -6,16 +6,28 @@ import BlogIndex from "./components/BlogIndex";
 import BlogPost from "./components/BlogPost";
 import About from "./components/About";
 import YouTubePage from "./components/YouTubePage";
+import SurvivalGuide from "./components/SurvivalGuide";
+import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
 
 function parseHash(hash) {
   const h = hash || window.location.hash || "";
+
+  // Handle empty hash or just #/
+  if (h === "" || h === "#" || h === "#/") return { page: "home" };
+
+  // Valid routes
   if (/^#\/about\/?$/.test(h)) return { page: "about" };
   if (/^#\/youtube\/?$/.test(h)) return { page: "youtube" };
   if (/^#\/blog\/?$/.test(h)) return { page: "blog" };
+  if (/^#\/survival-guide\/?$/.test(h)) return { page: "survival-guide" };
+
+  // Blog post routes
   const match = h.match(/^#\/blog\/([^/?#]+)/);
   if (match) return { page: "post", slug: decodeURIComponent(match[1]) };
-  return { page: "home" };
+
+  // Any other path is invalid
+  return { page: "not-found" };
 }
 
 function App() {
@@ -50,6 +62,9 @@ function App() {
       case "blog":
         window.location.hash = "#/blog";
         break;
+      case "survival-guide":
+        window.location.hash = "#/survival-guide";
+        break;
       case "post":
         window.location.hash = s ? `#/blog/${encodeURIComponent(s)}` : "#/blog";
         break;
@@ -78,6 +93,10 @@ function App() {
         return <YouTubePage />;
       case "about":
         return <About />;
+      case "survival-guide":
+        return <SurvivalGuide />;
+      case "not-found":
+        return <NotFound onNavigate={navigateTo} />;
       default:
         return (
           <HomePage

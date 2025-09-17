@@ -6,7 +6,7 @@ function Header({ onNavigate, currentPage }) {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo" onClick={() => onNavigate("home")}>
+        <div className="nav-logo" onClick={() => onNavigate("home")}>
           <img src="/images/tlsg_logo.png" alt="The Last Survival Guide logo" />
         </div>
         <nav className="nav">
@@ -33,6 +33,14 @@ function Header({ onNavigate, currentPage }) {
             onClick={() => onNavigate("about")}
           >
             About
+          </button>
+          <button
+            className={`nav-link ${
+              currentPage === "survival-guide" ? "active" : ""
+            }`}
+            onClick={() => onNavigate("survival-guide")}
+          >
+            Free Survival Guide
           </button>
           <div className="nav-text">
             Follow Us:
