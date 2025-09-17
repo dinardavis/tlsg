@@ -141,12 +141,11 @@ export default function About() {
             <AboutSectionHeader
               eyebrow="The story"
               title="I'm Dinar."
-              lead="Born in Hiroshima, raised in California, lived in 11 countries. In 2022, I left for what was supposed to be a short trip. Two years later, I'm still at it—with more survival lessons than souvenirs."
+              lead="Born in Hiroshima, (mostly) raised in California, lived in 11 countries. In 2022, I left for what I thought we would 3 months, max. Two years and a ton of amazing experiences later I was still at it. But soon after, the music finally stopped and I ended up back in the U.S. ...plotting my next escape."
             />
             <div className="about-prose">
               <p>
-                I try things, show the work, and keep what holds up in real
-                life.
+                At TLSG, you'll see me trying things, and showing the work. I'll keep what works, throw away what doesn't, and keep it moving.
               </p>
             </div>
           </div>
@@ -159,11 +158,10 @@ export default function About() {
           <AboutSectionHeader
             eyebrow="The mission"
             title="TLSG is about applied survival"
-            lead="Practical moves, not abstract advice. I share what I test so you skip the potholes."
+            lead="Practical moves, not abstract advice. I share what I test so you can avoid the potholes."
           />
           <blockquote className="about-pull-quote">
-            I share the process so you skip a few potholes and get where you're
-            going sooner.
+            Throughout my travels (and life in general), I've made a ton of mistakes, but pretty much always felt the better for the lessons I've learned.
           </blockquote>
 
           <div className="about-feature-grid">

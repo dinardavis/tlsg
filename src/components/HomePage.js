@@ -45,7 +45,7 @@ function HomePage({ onPostClick, onNavigate }) {
         <div className="hero-container">
           <div className="hero-left">
             <h1 className="hero-title">
-              The "How-To" Reboot Your Life Guide<br></br>
+              The Guide To Building The Life You Want<br></br>
               {/* <span>(without wrecking it)</span> */}
             </h1>
                       <div className="hero-media hero-media-img">
@@ -61,11 +61,8 @@ function HomePage({ onPostClick, onNavigate }) {
               </div>
             </div>
             <p className="hero-subtitle">
-              A field manual for people who want to live bigger without burning
-              it all down. TLSG shares real numbers, useful playbooks, and the
-              survival mindset you need to thrive in a new place. Not "find
-              yourself on a mountaintop"—just clear steps to make life work,
-              anywhere.
+              Get the advice, tips, hacks that you've been looking for to help you create the life of your dreams. TLSG shares real world experience, useful playbooks, and the
+              survival mindset you need to relocate, change careers, or just enjoy where you are a bit more. 
             </p>
           </div>
           <div className="hero-right">
