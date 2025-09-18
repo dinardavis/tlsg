@@ -100,7 +100,7 @@ export default function About() {
               className="about-hero-logo"
             />
             <p className="about-hero-lead">
-              Practical survival lessons for building a life you like.
+              The practical survival lessons for building a life you like.
             </p>
           </div>
 
