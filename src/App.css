@@ -696,7 +696,7 @@ main {
 .about-section-content {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 var(--container-px);
+  padding: 0;
 }
 
 /* Eyebrow + headers */
@@ -794,7 +794,7 @@ main {
 }
 .about-media.the-person-img {
   aspect-ratio: 3 / 4;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 .about-media-tag {
   position: absolute;
@@ -852,13 +852,14 @@ main {
 .about-belief-card {
   display: flex;
   align-items: center;
+  height: 100%;
   background: var(--accent-3);
   color: var(--card);
   border-radius: var(--radius-l);
   box-shadow: var(--shadow-s);
   padding: 1rem;
   margin: 0.5rem 0;
-  height: 100%;
+
 }
 .about-belief-card .about-card-title {
   font-size: 1.5rem;
@@ -983,6 +984,7 @@ main {
 
 /* Newsletter */
 .about-newsletter-card {
+  width: 100%;
   background: var(--card);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-m);
@@ -2133,6 +2135,9 @@ main {
 
 /* About page styles */
 .about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   background: var(--background);
 }
@@ -2389,6 +2394,8 @@ main {
 
 /* Beliefs Section */
 .about-beliefs {
+  width: 100%;
+  max-width: 1000px;
   padding: var(--space-8) var(--container-px);
   background: var(--background);
 }
