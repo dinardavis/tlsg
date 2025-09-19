@@ -3256,8 +3256,9 @@ p.footer-tagline {
   position: relative;
   padding-left: var(--space-6);
   margin-bottom: var(--space-1);
+  font-size: .9rem;
   color: var(--neutral-700);
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .offer-features li::before {
