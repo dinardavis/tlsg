@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import NewsletterSignup from "./NewsletterSignup";
 import BlogTeaser from "./BlogTeaser";
 import YouTubeEmbed from "./YouTubeEmbed";
+import ResourcesCarousel from "./ResourcesCarousel";
 import IconPill from "./IconPill";
 import { FaPersonWalkingLuggage } from "react-icons/fa6";
 import { TRAILER_VIDEO_ID, CHANNEL_HANDLE_URL } from "../utils/youtubeData";
@@ -48,7 +49,7 @@ function HomePage({ onPostClick, onNavigate }) {
               The Guide To Building The Life You Want<br></br>
               {/* <span>(without wrecking it)</span> */}
             </h1>
-                      <div className="hero-media hero-media-img">
+            <div className="hero-media hero-media-img">
               <img
                 src="/images/me_peace.jpg"
                 alt="Dinar at the airport"
@@ -61,8 +62,10 @@ function HomePage({ onPostClick, onNavigate }) {
               </div>
             </div>
             <p className="hero-subtitle">
-              Get the advice, tips, hacks that you've been looking for to help you create the life of your dreams. TLSG shares real world experience, useful playbooks, and the
-              survival mindset you need to relocate, change careers, or just enjoy where you are a bit more. 
+              Get the advice, tips, hacks that you've been looking for to help
+              you create the life of your dreams. TLSG shares real world
+              experience, useful playbooks, and the survival mindset you need to
+              relocate, change careers, or just enjoy where you are a bit more.
             </p>
           </div>
           <div className="hero-right">
@@ -131,6 +134,10 @@ function HomePage({ onPostClick, onNavigate }) {
           </div>
         </div>
       </section> */}
+
+      <section className="resources-preview scroll-animate">
+        <ResourcesCarousel />
+      </section>
 
       <section className="blog-preview scroll-animate">
         <div className="blog-preview-container">

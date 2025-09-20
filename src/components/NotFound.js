@@ -86,3 +86,4 @@ function NotFound({ onNavigate }) {
 }
 
 export default NotFound;
+
