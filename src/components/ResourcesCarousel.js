@@ -122,7 +122,7 @@ function ResourcesCarousel() {
           </button>
         </div>
 
-        <div className="carousel-indicators">
+        {/* <div className="carousel-indicators">
           {resources.map((_, index) => (
             <button
               key={index}
@@ -134,7 +134,7 @@ function ResourcesCarousel() {
               aria-label={`Go to resource ${index + 1}`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
