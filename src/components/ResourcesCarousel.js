@@ -25,7 +25,7 @@ function ResourcesCarousel() {
     {
       id: 3,
       title:
-        "How to Calculate Your Runway (and Know Exactly When You'll Run Out of Money)",
+        "How to Calculate Your Relocation Runway",
       description:
         'Walkthrough with formulas: burn rate, fixed vs. flexible costs, runway extensions. Includes examples like "every $500 adds X weeks."',
       icon: "📊",
