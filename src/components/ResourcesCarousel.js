@@ -1,4 +1,11 @@
 import React, { useState, useRef } from "react";
+import {
+  FaDollarSign,
+  FaPiggyBank,
+  FaChartLine,
+  FaExclamationTriangle,
+  FaHome,
+} from "react-icons/fa";
 
 function ResourcesCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,7 +17,7 @@ function ResourcesCarousel() {
       title: "How to Build a Relocation Budget That Actually Works",
       description:
         "Step-by-step system for mapping fixed costs (rent, visa, insurance), variable costs (food, transport), and hidden expenses. Includes a sample monthly breakdown.",
-      icon: "💰",
+      icon: <FaDollarSign style={{ color: "var(--primary)" }} />,
       downloadText: "Download Budget Guide",
     },
     {
@@ -19,16 +26,15 @@ function ResourcesCarousel() {
         "How to Save $10–15K for a Move Abroad (Without Going Broke at Home)",
       description:
         'Concrete actions: cutting recurring bills, side-income strategies, and building a "move fund" that stays untouched.',
-      icon: "💸",
+      icon: <FaPiggyBank style={{ color: "var(--primary)" }} />,
       downloadText: "Download Savings Guide",
     },
     {
       id: 3,
-      title:
-        "How to Calculate Your Relocation Runway",
+      title: "How to Calculate Your Relocation Runway",
       description:
         'Walkthrough with formulas: burn rate, fixed vs. flexible costs, runway extensions. Includes examples like "every $500 adds X weeks."',
-      icon: "📊",
+      icon: <FaChartLine style={{ color: "var(--primary)" }} />,
       downloadText: "Download Runway Calculator",
     },
     {
@@ -36,7 +42,7 @@ function ResourcesCarousel() {
       title: "How to Avoid the Top 7 Financial Pitfalls When Relocating",
       description:
         "Covers ATM/FX fees, bad leases, overpaying for insurance, scams, emergency fund gaps, and forgetting debt obligations.",
-      icon: "⚠️",
+      icon: <FaExclamationTriangle style={{ color: "var(--primary)" }} />,
       downloadText: "Download Pitfalls Guide",
     },
     {
@@ -44,7 +50,7 @@ function ResourcesCarousel() {
       title: "How to Find an Apartment Abroad Without Losing Your Deposit",
       description:
         "Steps: where to search, how to verify legitimacy, negotiating terms, what to look out for in contracts, and red flags to walk away from.",
-      icon: "🏠",
+      icon: <FaHome style={{ color: "var(--primary)" }} />,
       downloadText: "Download Apartment Guide",
     },
   ];
